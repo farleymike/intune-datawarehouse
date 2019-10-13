@@ -1,14 +1,20 @@
-Example of calling the Intune Data Warehouse API from Python. Sample code will pull two (2) deivces records.
+# About #
+This repo contains examples of calling the Intune Data Warehouse API from Python. Sample code uses a parameters.json file to hold the credentials. You'll need to create one yourself if you want to try out the code.
 
-PYthon ADAL Code to obtain a bearer token taken from here:
+Python ADAL code to obtain a bearer token taken from here:
 https://github.com/AzureAD/azure-activedirectory-library-for-python/blob/dev/sample/client_credentials_sample.py
 
-Usage:
+| Script | Purpose |
+| ------ | ------- |
+| intune.py |  Connect and retrieve a list of devices. |
 
-python intune.py parameters.json
+# Usage Example: #
+
+`python intune.py parameters.json`
 
 parameters.json example:
 
+```json
 {
     "resource": "https://api.manage.microsoft.com/",
     "tenant" : "<yourtenant>.onmicrosoft.com",
@@ -17,3 +23,4 @@ parameters.json example:
     "clientSecret" : "xxxxxxxxxxxxxx",
     "intuneAPIEndpoint": "https://<yourapiendpoint>.manage.microsoft.com/ReportingService/DataWarehouseFEService/"
 }
+```
