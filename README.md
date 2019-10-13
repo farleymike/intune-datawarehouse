@@ -1,7 +1,12 @@
 # About #
 This repo contains examples of calling the Intune Data Warehouse API from Python. Sample code uses a parameters.json file to hold the credentials. You'll need to create one yourself if you want to try out the code.
 
+Intune Data Warehouse:
+
+https://docs.microsoft.com/en-us/intune/developer/reports-nav-intune-data-warehouse
+
 Python ADAL code to obtain a bearer token taken from here:
+
 https://github.com/AzureAD/azure-activedirectory-library-for-python/blob/dev/sample/client_credentials_sample.py
 
 | Script | Purpose |
